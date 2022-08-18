@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+ul,ol{
+    list-style-type: none;
+    margin: 0 !important;
+}
+
+header{
+    background-color: #333;
+    ul{
+        display: flex;
+        li{
+            a{
+                color:#fff;
+                display: block;
+                padding: 10px;
+                &.active{
+                    background-color: #ef3231;
+                }
+            }
+        }
+    }
+}
+
+.main_content{
+    background-color: #999;
+    .banner_content{
+        background-color: aliceblue;
+        padding: 50px 0;
+    }
+}
+
+footer{
+    background-color: #222;
+    color:#fff;
+    padding: 10px;
+}
