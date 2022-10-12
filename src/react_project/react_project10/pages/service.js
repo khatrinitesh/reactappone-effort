@@ -58,10 +58,12 @@ class UserProfiles extends Component {
       });
   }
   render() {
+    const { first, last, title } = this.state.name;
+    const { image } = this.state;
     return (
       <>
-        <h1>{`${this.state.name.title} ${this.state.name.first} ${this.state.name.last}`}</h1>
-        <img alt="Profile" src={this.state.image} />
+        <h1>{`${title} ${first} ${last}`}</h1>
+        <img alt="Profile" src={image} />
         <button onClick={this.getUser}>Get new User</button>
       </>
     );
